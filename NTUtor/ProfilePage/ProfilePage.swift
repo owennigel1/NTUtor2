@@ -8,12 +8,8 @@
 import SwiftUI
 
 
-
-
-
 struct ProfilePage: View {
     var body: some View {
-        
         VStack{
             ZStack{
                 //Background
@@ -75,22 +71,7 @@ struct ProfilePage: View {
                         .font(.system(size:25))
                         .offset(x:-110, y:-35)
                     
-                    ZStack{
-                        SpeechBubble()
-                            .stroke(Color.gray, lineWidth: 3)
-                            .frame(width: 340, height:200)
-                        
-                        Text("""
-                             Hello! I am Owen, a Y1 Business &
-                             Computer Science student. I provide
-                             tutoring for the following mods on
-                             Mon-Wed, 1-3pm and 8-10pm.
-                             
-                             - SC1005 Digital Logic
-                             - MH1812 Discrete Math
-                             - SC1007 Data Structures and Algo
-                             """)
-                    }
+                    BioView()
                     
                     HStack{
                         Text("Rates:")

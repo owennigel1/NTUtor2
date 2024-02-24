@@ -16,13 +16,17 @@ struct TutorScheduleView: View {
 //                    .cornerRadius(20)
                 Color("AccentColor")
                 ScrollView {
+                    List{
+                        Text("16 Jan, 1600")
+                        Text("def")
+                    }
                     VStack(spacing: 20) {
-                        ForEach(0..<10) {
-                            Text("Item \($0)")
-                                .foregroundStyle(.white)
-                                .font(.largeTitle)
-                                .frame(width: 200, height: 200)
-                                .background(.red)
+//                        ForEach() {
+//                            Text("Item \($0)")
+//                                .foregroundStyle(.white)
+//                                .font(.largeTitle)
+//                                .frame(width: 200, height: 200)
+//                                .background(.red)
                         }
                     }
                 }
@@ -32,9 +36,9 @@ struct TutorScheduleView: View {
             .cornerRadius(20)
         }
     }
-}
-    
+ 
 
 #Preview {
     TutorScheduleView()
 }
+

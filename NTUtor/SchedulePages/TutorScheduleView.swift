@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-struct
-
 struct TutorScheduleView: View {
     var body: some View {
         VStack{

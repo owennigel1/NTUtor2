@@ -45,18 +45,24 @@ struct TutorInfoScroll: View {
     }
     
     var body: some View {
-        VStack{
+        VStack (spacing: 0) {
             ZStack {
-                RoundedRectangle(cornerRadius: 10, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                Rectangle()
                     .fill(Color("AccentColor2"))
-                .ignoresSafeArea()
+                    .frame(maxWidth: .infinity, maxHeight: 300)
+                    .ignoresSafeArea()
+                    .padding(-30)
                 
-                Text("Owen Nigel")
+                Text("SC1005 Digital Logic")
+                    .frame(width: .infinity, height: 50, alignment: .leading)
+                    .font(.custom("Arial", size : 30))
+                    .foregroundColor(.white)
+                    .bold()
             }
 
             ZStack{
-                Color(.gray)
-                ScrollView {
+                Color(.white)
+                ScrollView (showsIndicators : false){
                     ForEach(tutorInfo) { info in
                         VStack(spacing: 20) {
                             DisplayTutors(name: info.name,
@@ -70,9 +76,9 @@ struct TutorInfoScroll: View {
                         .padding(.bottom, 8)
                     }
                 }
-                .padding(10)
+                .padding(20)
             }
-            .frame(width:365, height: 630)
+            .frame(width:.infinity, height: 630)
             .cornerRadius(20)
         }
     }

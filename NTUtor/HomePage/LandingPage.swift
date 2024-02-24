@@ -25,7 +25,7 @@ struct LandingPage: View {
                     .padding(.top, 20)
                     .padding(.bottom,40)
                 Button {
-                    print("Button pressed")
+                    print("Button Pressed")
                 } label: {
                     HStack{
                         Image(systemName: "magnifyingglass")
@@ -34,7 +34,7 @@ struct LandingPage: View {
                     }
                     .padding()
                     .foregroundColor(.white)
-                    .background(Color("AccentColor"))
+                    .background(Color("AccentColor2"))
                     .cornerRadius(10)
                 }
                 .contentShape(Rectangle())

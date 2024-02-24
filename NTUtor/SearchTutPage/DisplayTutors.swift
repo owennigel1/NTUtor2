@@ -59,6 +59,7 @@ struct DisplayTutors: View {
                                 Text("Year:")
                             }
                             .padding(.top, 13)
+                            .bold()
                         }
                         GeometryReader{ geometry in
                             HStack{
@@ -67,6 +68,7 @@ struct DisplayTutors: View {
                                 Text("\(year!)")
                             }
                             .padding(.top, 8)
+                            
                         }
                         GeometryReader{ geometry in
                             HStack{
@@ -75,6 +77,7 @@ struct DisplayTutors: View {
                                 Text("Rate:")
                             }
                             .padding(.top, 5)
+                            .bold()
                         }
                         GeometryReader{ geometry in
                             HStack{
@@ -83,6 +86,7 @@ struct DisplayTutors: View {
                                 Text("\(rate!)")
                             }
                             .padding(.bottom, 5)
+                            
                         }
                     }
                     .font(.custom("Arial", size : 15))

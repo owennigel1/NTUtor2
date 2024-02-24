@@ -27,7 +27,12 @@ struct BottomBarView: View {
             ProfilePage()
                 //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                 //.background(Color("bg").ignoresSafeArea())
-                .tag(Tab.Chat)
+                .tag(Tab.Tutor)
+            
+            ProfilePage()
+                //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+                //.background(Color("bg").ignoresSafeArea())
+                .tag(Tab.Schedule)
             
             ProfilePage()
                 //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
@@ -64,7 +69,7 @@ struct BottomBarView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 25, height: 25)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(currentTab == tab ? Color(.black) : Color(.black))
+                        .foregroundColor(currentTab == tab ? Color("AccentColor") : Color("AccentColor"))
                         .background(
                             ZStack{
                             if currentTab == tab{
@@ -90,15 +95,18 @@ struct BottomBarView: View {
 
 enum Tab: String, CaseIterable{
     case Home = "house"
-    case Chat = "message"
+    case Tutor = "book"
+    case Schedule = "calendar.circle"
     case Profile = "person"
     
     var tabName: String{
         switch self {
         case .Home:
             return "Home"
-        case .Chat:
-            return "Chat"
+        case .Tutor:
+            return "Tutor"
+        case .Schedule:
+            return "Schedule"
         case .Profile:
             return "Profile"
         }

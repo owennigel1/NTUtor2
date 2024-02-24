@@ -70,7 +70,7 @@ struct ProfilePage: View {
                             center: .center,
                             startAngle: .degrees(35),
                             endAngle: .degrees(180))
-                    ).opacity(0.3)
+                    ).opacity(0.15)
                     .frame(width: 1000, height: 2000)
                     .offset(y:-240)
                     .ignoresSafeArea()

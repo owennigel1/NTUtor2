@@ -24,12 +24,12 @@ struct BottomBarView: View {
                 //.background(Color("bg").ignoresSafeArea())
                 .tag(Tab.Home)
             
-            ProfilePage()
+            TutorPage()
                 //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                 //.background(Color("bg").ignoresSafeArea())
                 .tag(Tab.Tutor)
             
-            ProfilePage()
+            SchedulePage()
                 //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                 //.background(Color("bg").ignoresSafeArea())
                 .tag(Tab.Schedule)

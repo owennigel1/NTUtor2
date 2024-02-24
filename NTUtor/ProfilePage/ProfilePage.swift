@@ -59,41 +59,61 @@ struct SpeechBubble: Shape {
 
 struct ProfilePage: View {
     var body: some View {
+        
         VStack{
             ZStack{
+                //Background
+                Rectangle()
+                    .fill(
+                        AngularGradient(
+                            colors: [.white, Color("SecondaryColor")],
+                            center: .center,
+                            startAngle: .degrees(35),
+                            endAngle: .degrees(180))
+                    ).opacity(0.15)
+                    .frame(width: 1000, height: 2000)
+                    .offset(y:-240)
+                    .ignoresSafeArea()
+            
                 //Top half display of profile: pic,name,course,year
                 Circle().fill(
-                    LinearGradient(gradient: Gradient(colors: [.white, Color("SecondaryColor").opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor")]), startPoint: .top, endPoint: .bottom)
                     )
                     .frame(width: 500, height:500)
-                    .offset(y:-333)
+                    .offset(y:-350)
                     .shadow(radius: 0)
-                VStack(spacing:0){
+                VStack(spacing:-5){
                     Image("ProfilePic")
                         .resizable()
                         .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                         .frame(width: 175, height:200)
                         .scaledToFit()
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color(red: 39 / 255, green: 113 / 255, blue: 233 / 255), lineWidth: 4))
+                        .overlay(Circle().stroke(Color("SecondaryColor"), lineWidth: 2))
                         .shadow(radius: 20)
                     VStack{
-                        Text("Sophia Lim")
+                        Text("Owen Nigel")
                             .font(.system(size: 35))
                             .bold()
                         HStack{
-                            Text("CS")
+                            Text("BCG")
                                 .italic()
                             Text("|")
-                                .foregroundColor(Color("AccentColor"))
-                            Text("Year 2")
+                                .foregroundColor(Color("SecondaryColor"))
+                            Text("Year 1")
                         }
                         .font(.system(size: 20))
                     }
                     
-                }.offset(y:-245)
+                }.offset(y:-255)
                 
-                //Bottom half display of bio
+                //Edit Profile
+                Image(systemName: "highlighter")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .offset(x:165,y:-360)
+                
+                //Bottom half display of bio, contact details + rates
                 VStack(spacing:-15){
                     Text("About Me")
                         .bold()
@@ -104,20 +124,37 @@ struct ProfilePage: View {
                     ZStack{
                         SpeechBubble()
                             .stroke(Color.gray, lineWidth: 3)
-                            .frame(width: 300, height:200)
+                            .frame(width: 340, height:200)
                         
                         Text("""
-                             Hello! I am Sophia, a Y2 Computer
-                             Science student. I provide tutoring
-                             for the following mods on Mon-Wed,
-                             1-3pm and 8-10pm.
+                             Hello! I am Owen, a Y1 Business &
+                             Computer Science student. I provide
+                             tutoring for the following mods on
+                             Mon-Wed, 1-3pm and 8-10pm.
                              
                              - SC1005 Digital Logic
                              - MH1812 Discrete Math
                              - SC1007 Data Structures and Algo
                              """)
                     }
-                }.offset(y:85)
+                    
+                    HStack{
+                        Text("Rates:")
+                            .foregroundColor(Color("AccentColor"))
+                        Text("$15/h")
+                            .italic()
+                    }.bold().font(.system(size:20)).offset(y:40)
+                    
+                    HStack{
+                        Text("Telegram:")
+                            .foregroundColor(Color("AccentColor"))
+                            .bold()
+                        Text("@OwenNigel")
+                            .foregroundColor(.gray)
+                            .italic()
+                    }.font(.system(size:20)).offset(y:60)
+            
+                }.offset(y:70)
             }
         }
     }

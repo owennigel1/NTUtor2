@@ -20,6 +20,7 @@
 		305658132B89E32D00B0208A /* DropDownPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658122B89E32D00B0208A /* DropDownPickerView.swift */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
+		C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		305658122B89E32D00B0208A /* DropDownPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerView.swift; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
+		C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C93A25622B89A881004FD102 /* Confirmation.swift */,
+				C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */,
 			);
 			path = SearchTutPage;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
+				C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */,
 				305658082B89D03A00B0208A /* BottomBarView.swift in Sources */,
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 			);

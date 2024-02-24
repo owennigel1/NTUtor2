@@ -62,9 +62,12 @@ struct ProfilePage: View {
         VStack{
             ZStack{
                 //Top half display of profile: pic,name,course,year
-                Circle().fill(Color.teal.opacity(0.3))
+                Circle().fill(
+                    LinearGradient(gradient: Gradient(colors: [.white, Color("SecondaryColor").opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                    )
                     .frame(width: 500, height:500)
                     .offset(y:-333)
+                    .shadow(radius: 0)
                 VStack(spacing:0){
                     Image("ProfilePic")
                         .resizable()

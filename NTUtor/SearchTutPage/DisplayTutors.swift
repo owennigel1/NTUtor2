@@ -21,7 +21,7 @@ struct DisplayTutors: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(Color("AccentColor"))
+                .fill(Color("AccentColor2"))
                 .frame(width: 350, height: 36)
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 113)

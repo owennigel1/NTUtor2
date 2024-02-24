@@ -36,7 +36,6 @@ struct TutorScheduleView: View {
             .cornerRadius(20)
         }
     }
-}
  
 
 #Preview {

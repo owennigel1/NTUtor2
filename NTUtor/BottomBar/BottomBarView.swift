@@ -69,7 +69,7 @@ struct BottomBarView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 25, height: 25)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(currentTab == tab ? Color("AccentColor") : Color("AccentColor"))
+                        .foregroundColor(currentTab == tab ? Color("AccentColor2") : Color("AccentColor2"))
                         .background(
                             ZStack{
                             if currentTab == tab{

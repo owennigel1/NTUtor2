@@ -45,41 +45,58 @@ struct TutorInfoScroll: View {
     }
     
     var body: some View {
-        VStack (spacing: 0) {
-            ZStack {
-                Rectangle()
-                    .fill(Color("AccentColor2"))
-                    .frame(maxWidth: .infinity, maxHeight: 300)
-                    .ignoresSafeArea()
-                    .padding(-30)
-                
-                Text("SC1005 Digital Logic")
-                    .frame(width: .infinity, height: 50, alignment: .leading)
-                    .font(.custom("Arial", size : 30))
-                    .foregroundColor(.white)
-                    .bold()
-            }
-
-            ZStack{
-                Color(.white)
-                ScrollView (showsIndicators : false){
-                    ForEach(tutorInfo) { info in
-                        VStack(spacing: 20) {
-                            DisplayTutors(name: info.name,
-                                          tele: info.tele,
-                                          course: info.course,
-                                          year: info.year,
-                                          grade: info.grade,
-                                          rate: info.rate,
-                                          pic: info.pic)
+        NavigationView {
+            VStack (spacing: 0) {
+                ZStack {
+                    Rectangle()
+                        .fill(Color("AccentColor2"))
+                        .frame(maxWidth: .infinity, maxHeight: 300)
+                        .ignoresSafeArea()
+                        .padding(-30)
+                    
+                    VStack {
+                        NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
+                            HStack{
+                                Image(systemName: "magnifyingglass")
+                                Text("Find a Tutor")
+                                    .font(.system(size: 25, weight: .heavy, design: .default))
+                            }
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color("AccentColor2"))
+                            .cornerRadius(10)
                         }
-                        .padding(.bottom, 8)
+                        
+                        Text("SC1005 Digital Logic")
+                            .frame(width: .infinity, height: 50, alignment: .leading)
+                            .font(.custom("Arial", size : 30))
+                            .foregroundColor(.white)
+                            .shadow(radius: 20)
+                        .bold()
                     }
                 }
-                .padding(20)
+
+                ZStack{
+                    Color(.white)
+                    ScrollView (showsIndicators : false){
+                        ForEach(tutorInfo) { info in
+                            VStack(spacing: 20) {
+                                DisplayTutors(name: info.name,
+                                              tele: info.tele,
+                                              course: info.course,
+                                              year: info.year,
+                                              grade: info.grade,
+                                              rate: info.rate,
+                                              pic: info.pic)
+                            }
+                            .padding(.bottom, 8)
+                        }
+                    }
+                    .padding(20)
+                }
+                .frame(width:.infinity, height: 630)
+                .cornerRadius(20)
             }
-            .frame(width:.infinity, height: 630)
-            .cornerRadius(20)
         }
     }
 }

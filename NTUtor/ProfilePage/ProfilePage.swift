@@ -27,7 +27,7 @@ struct ProfilePage: View {
             
                 //Top half display of profile: pic,name,course,year
                 Circle().fill(
-                    LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor")]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor2")]), startPoint: .top, endPoint: .bottom)
                     )
                     .frame(width: 500, height:500)
                     .offset(y:-350)
@@ -75,14 +75,14 @@ struct ProfilePage: View {
                     
                     HStack{
                         Text("Rates:")
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color("AccentColor2"))
                         Text("$15/h")
                             .italic()
                     }.bold().font(.system(size:20)).offset(y:40)
                     
                     HStack{
                         Text("Telegram:")
-                            .foregroundColor(Color("AccentColor"))
+                            .foregroundColor(Color("AccentColor2"))
                             .bold()
                         Text("@OwenNigel")
                             .foregroundColor(.gray)

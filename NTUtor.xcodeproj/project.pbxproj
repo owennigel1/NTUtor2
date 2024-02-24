@@ -53,11 +53,11 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
+				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
 				C93A255C2B899FB1004FD102 /* TutorAvailPage */,
 				C93A255B2B899FA9004FD102 /* ProfilePage */,
 				C93A255A2B899F26004FD102 /* SchedulePage */,
 				C93A25572B89936F004FD102 /* SearchTutPage */,
-				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
 				305657E12B898AD000B0208A /* ContentView.swift */,
 				305657E32B898AD400B0208A /* Assets.xcassets */,
 				305657E52B898AD400B0208A /* Preview Content */,

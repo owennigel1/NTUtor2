@@ -7,22 +7,32 @@
 
 import SwiftUI
 
-let darkBlue = Color(red: 53/255, green: 105/255, blue: 251/255)
-let lightBlue = Color(red: 45/255, green: 213/255, blue: 255/255)
 
 struct ProfilePage: View {
     var body: some View {
-        VStack{
-            Text("Rachel Nae")
-                .offset(x:20, y:-330)
-                .bold()
-                .foregroundColor(darkBlue)
-            HStack{
-                Text("BCG")
-                    .italic()
-                Text("Year 1")
-            }.offset(x:20, y:-325)
-            
+        HStack{
+            Image(systemName: "person.fill")
+                .resizable()
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                .frame(width: 150, height:100)
+                .scaledToFit()
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color(red: 39 / 255, green: 113 / 255, blue: 233 / 255), lineWidth: 5))
+                .shadow(radius: 20)
+                .offset(x:-60,y:-330)
+        
+            VStack{
+                Text("Rachel Nae")
+                    .offset(x:20, y:-330)
+                    .bold()
+                    .foregroundColor(Color("AccentColor"))
+                HStack{
+                    Text("BCG")
+                        .italic()
+                    Text("Year 1")
+                }.offset(x:20, y:-325)
+                
+            }
         }
     }
 }

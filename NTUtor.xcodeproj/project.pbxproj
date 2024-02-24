@@ -51,6 +51,7 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
+				C93A25572B89936F004FD102 /* New Group */,
 				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
 				305657E12B898AD000B0208A /* ContentView.swift */,
 				305657E32B898AD400B0208A /* Assets.xcassets */,
@@ -65,6 +66,13 @@
 				305657E62B898AD400B0208A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C93A25572B89936F004FD102 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

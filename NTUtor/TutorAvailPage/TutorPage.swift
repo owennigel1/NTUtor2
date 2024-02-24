@@ -14,7 +14,7 @@ struct TutorPage: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 180)
-                .position(x:270, y: 770)
+                .position(x:290, y: 760)
             VStack{
                 Image("tutor")
                     .resizable()
@@ -40,6 +40,25 @@ struct TutorPage: View {
                 }
                 .padding(.leading, 50)
                 DatePickerView()
+                HStack{
+                    Button {
+                        print("Button Pressed")
+                    } label: {
+                        HStack{
+                            Image(systemName: "paperplane")
+                            Text("Submit")
+                                .font(.system(size: 25, weight: .heavy, design: .default))
+                        }
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color("AccentColor2"))
+                        .cornerRadius(10)
+                    }
+                    .contentShape(Rectangle())
+                    Spacer()
+                }
+                .padding(.top,46)
+                .padding(.leading, 45)
                 Spacer()
             }
         }

@@ -38,8 +38,26 @@ struct TutDescriptionPageView: View {
             
             DropDownPickerDate()
                 .offset(x:-81)
-                .padding(10)
-            
+                .padding(5)
+            HStack{
+                Button {
+                    print("Button Pressed")
+                } label: {
+                    HStack{
+                        Image(systemName: "person.2")
+                        Text("Book")
+                            .font(.system(size: 25, weight: .heavy, design: .default))
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color("AccentColor2"))
+                    .cornerRadius(10)
+                }
+                .contentShape(Rectangle())
+                Spacer()
+            }
+            .padding(.top,7)
+            .padding(.leading, 26)
             Spacer()
             
         }

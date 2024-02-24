@@ -19,6 +19,8 @@ struct SchedulePage: View {
                     .font(.system(size:40))
                     .bold()
             }.offset(x:-80, y:-315)
+            
+            
         }
     }
 }

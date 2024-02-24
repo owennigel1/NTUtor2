@@ -223,12 +223,9 @@
 			files = (
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
-<<<<<<< HEAD
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
-=======
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
 				305658082B89D03A00B0208A /* BottomBarView.swift in Sources */,
->>>>>>> main
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

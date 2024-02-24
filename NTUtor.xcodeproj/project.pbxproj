@@ -28,6 +28,7 @@
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
 		C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */; };
+		C9FE336D2B8A359B00E42642 /* TutorInfoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336C2B8A359B00E42642 /* TutorInfoScroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutors.swift; sourceTree = "<group>"; };
+		C9FE336C2B8A359B00E42642 /* TutorInfoScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorInfoScroll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				C93A25622B89A881004FD102 /* Confirmation.swift */,
 				C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */,
+				C9FE336C2B8A359B00E42642 /* TutorInfoScroll.swift */,
 			);
 			path = SearchTutPage;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
+				C9FE336D2B8A359B00E42642 /* TutorInfoScroll.swift in Sources */,
 				305658132B89E32D00B0208A /* DropDownPickerView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
 				02B420F42B8A2684001441F7 /* TutorScheduleView.swift in Sources */,

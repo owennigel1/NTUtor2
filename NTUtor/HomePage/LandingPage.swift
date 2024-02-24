@@ -20,8 +20,9 @@ struct LandingPage: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300)
                     .padding(20)
+                DropDownPickerView()
+                    .offset(x:-58)
                 Spacer()
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             }
         }
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420E52B89B1C1001441F7 /* ProfilePage.swift */; };
 		02B420F12B89F3E3001441F7 /* SchedulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F02B89F3E3001441F7 /* SchedulePage.swift */; };
+		02B420F42B8A2684001441F7 /* TutorScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F32B8A2684001441F7 /* TutorScheduleView.swift */; };
 		305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305657DF2B898AD000B0208A /* NTUtorApp.swift */; };
 		305657E22B898AD000B0208A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305657E12B898AD000B0208A /* ContentView.swift */; };
 		305657E42B898AD400B0208A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305657E32B898AD400B0208A /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		02B420E52B89B1C1001441F7 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		02B420F02B89F3E3001441F7 /* SchedulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePage.swift; sourceTree = "<group>"; };
+		02B420F32B8A2684001441F7 /* TutorScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorScheduleView.swift; sourceTree = "<group>"; };
 		305657DC2B898AD000B0208A /* NTUtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTUtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305657DF2B898AD000B0208A /* NTUtorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTUtorApp.swift; sourceTree = "<group>"; };
 		305657E12B898AD000B0208A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02B420F22B8A265D001441F7 /* SchedulePages */ = {
+			isa = PBXGroup;
+			children = (
+				02B420F32B8A2684001441F7 /* TutorScheduleView.swift */,
+			);
+			path = SchedulePages;
+			sourceTree = "<group>";
+		};
 		305657D32B898AD000B0208A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
+				02B420F22B8A265D001441F7 /* SchedulePages */,
 				305658202B8A01CD00B0208A /* DatePicker */,
 				305658162B89F56100B0208A /* TutorAvailPage */,
 				3056580F2B89E27000B0208A /* DropDownPicker */,
@@ -262,6 +273,7 @@
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305658132B89E32D00B0208A /* DropDownPickerView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
+				02B420F42B8A2684001441F7 /* TutorScheduleView.swift in Sources */,
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
 				3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,

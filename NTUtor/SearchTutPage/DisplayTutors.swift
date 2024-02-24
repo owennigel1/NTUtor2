@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+
 struct DisplayTutors: View {
+    
+    var name: String?
+    var tele: String?
+    var course: String?
+    var year: Int?
+    var grade: String?
+    var rate: String?
+    var pic: String?
+    
     var body: some View {
-        
         ZStack {
             Rectangle()
                 .fill(Color("AccentColor"))
@@ -17,7 +26,7 @@ struct DisplayTutors: View {
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 113)
             HStack{
-                Image("ProfilePic")
+                Image("\(pic!)")
                     .resizable()
                     .cornerRadius(10, corners: [.topLeft, .bottomLeft])
                     .frame(width: 140)
@@ -26,7 +35,7 @@ struct DisplayTutors: View {
                     VStack (spacing: 0){
                         GeometryReader{ geometry in
                             HStack{
-                                Text("Owen")
+                                Text("\(name!)")
                                     .frame(width: geometry.size.width * 0.4, height: 30 ,alignment: .leading)
                                     .font(.custom("Arial", size : 20))
                                     .bold()
@@ -36,7 +45,7 @@ struct DisplayTutors: View {
                                     .shadow(color: .black, radius: 1)
                                     
                                 
-                                Text("@owennigel")
+                                Text("@\(tele!)")
                                     .frame(width: geometry.size.width * 0.6, height: 30 ,alignment: .leading)
                                     .foregroundColor(.white)
                                     .padding(.top, 3)
@@ -53,9 +62,9 @@ struct DisplayTutors: View {
                         }
                         GeometryReader{ geometry in
                             HStack{
-                                Text("CS")
+                                Text("\(course!)")
                                     .frame(width: geometry.size.width * 0.5, height: 10 ,alignment: .leading)
-                                Text("2")
+                                Text("\(year!)")
                             }
                             .padding(.top, 8)
                         }
@@ -69,9 +78,9 @@ struct DisplayTutors: View {
                         }
                         GeometryReader{ geometry in
                             HStack{
-                                Text("A+")
+                                Text("\(grade!)")
                                     .frame(width: geometry.size.width * 0.5, height: 5 ,alignment: .leading)
-                                Text("$15 / HR")
+                                Text("\(rate!)")
                             }
                             .padding(.bottom, 5)
                         }
@@ -105,6 +114,6 @@ extension View {
 }
 
 
-#Preview {
-    DisplayTutors()
-}
+//#Preview {
+  //  DisplayTutors()
+//}

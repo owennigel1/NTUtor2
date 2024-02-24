@@ -66,9 +66,9 @@ struct ProfilePage: View {
                     LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor")]), startPoint: .top, endPoint: .bottom)
                     )
                     .frame(width: 500, height:500)
-                    .offset(y:-333)
+                    .offset(y:-350)
                     .shadow(radius: 0)
-                VStack(spacing:0){
+                VStack(spacing:-5){
                     Image("ProfilePic")
                         .resizable()
                         .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
@@ -85,13 +85,19 @@ struct ProfilePage: View {
                             Text("BCG")
                                 .italic()
                             Text("|")
-                                .foregroundColor(Color("AccentColor"))
+                                .foregroundColor(Color("SecondaryColor"))
                             Text("Year 1")
                         }
                         .font(.system(size: 20))
                     }
                     
-                }.offset(y:-245)
+                }.offset(y:-255)
+                
+                //Edit Profile
+                Image(systemName: "highlighter")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .offset(x:165,y:-360)
                 
                 //Bottom half display of bio, contact details + rates
                 VStack(spacing:-15){
@@ -134,7 +140,7 @@ struct ProfilePage: View {
                             .italic()
                     }.font(.system(size:20)).offset(y:60)
             
-                }.offset(y:85)
+                }.offset(y:70)
             }
         }
     }

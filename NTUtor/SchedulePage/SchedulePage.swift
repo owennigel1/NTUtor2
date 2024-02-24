@@ -9,7 +9,17 @@ import SwiftUI
 
 struct SchedulePage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VStack{
+                Text("Hello, Owen")
+                    .font(.system(size:20))
+                    .offset(x:-30,y:-10)
+                    .foregroundColor(.gray)
+                Text("Schedule")
+                    .font(.system(size:40))
+                    .bold()
+            }.offset(x:-80, y:-315)
+        }
     }
 }
 

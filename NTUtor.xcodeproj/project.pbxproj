@@ -12,6 +12,7 @@
 		305657E42B898AD400B0208A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305657E32B898AD400B0208A /* Assets.xcassets */; };
 		305657E72B898AD400B0208A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305657E62B898AD400B0208A /* Preview Assets.xcassets */; };
 		C93A25592B89938E004FD102 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25582B89938E004FD102 /* SwiftUIView.swift */; };
+		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		305657E32B898AD400B0208A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305657E62B898AD400B0208A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C93A25582B89938E004FD102 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
+				C93A255D2B89A3E9004FD102 /* HomePage */,
 				C93A255C2B899FB1004FD102 /* TutorAvailPage */,
 				C93A255B2B899FA9004FD102 /* ProfilePage */,
 				C93A255A2B899F26004FD102 /* SchedulePage */,
@@ -100,6 +103,14 @@
 			children = (
 			);
 			path = TutorAvailPage;
+			sourceTree = "<group>";
+		};
+		C93A255D2B89A3E9004FD102 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				C93A25602B89A445004FD102 /* LandingPage.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +185,7 @@
 			files = (
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
+				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 				C93A25592B89938E004FD102 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

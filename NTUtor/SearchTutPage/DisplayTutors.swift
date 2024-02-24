@@ -9,45 +9,69 @@ import SwiftUI
 
 struct DisplayTutors: View {
     var body: some View {
+        
         VStack {
+            //Module Name
+            //Text ("\(selection)")
+            
+            //First Box
             HStack{
                 Image("ProfilePic")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color.black, lineWidth: 2)
-                    )
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .padding()
+                    .aspectRatio(contentMode: .fit)
+                /*.overlay(
+                 RoundedRectangle(cornerRadius: 15)
+                 .stroke(Color.black, lineWidth: 2)
+                 )*/
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
-                VStack{
-                    HStack{
-                        Text("Name")
-                            .frame(maxWidth: .infinity)
-                        Text("Telegram")
-                            .frame(maxWidth: .infinity)
+                Spacer()
+                
+                VStack (spacing: 0){
+                    GeometryReader{ geometry in
+                        HStack{
+                            Text("Owen")
+                                .frame(width: geometry.size.width * 0.4, height: 15 ,alignment: .leading)
+                                .font(.custom("Georgia", size : 25))
+                            
+                            Text("@owennigel")
+                                .frame(width: geometry.size.width * 0.6, height: 15 ,alignment: .leading)
+                                .font(.custom("Georgia", size : 15))
+                                .foregroundColor(.blue)
+                        }
+                        .padding(.top)
                     }
-                    HStack{
-                        Text("Course")
-                        Text("Year")
+                    GeometryReader{ geometry in
+                        HStack{
+                            Text("Course:")
+                                .frame(width: geometry.size.width * 0.4, height: 5 ,alignment: .leading)
+                            Text("Year:")
+                                .frame(width: geometry.size.width * 0.6, height: 5 ,alignment: .leading)
+                        }
                     }
-                    HStack{
-                        Text("Grade")
-                        Text("Rate")
+                    GeometryReader{ geometry in
+                        HStack{
+                            Text("Grade:")
+                                .frame(width: geometry.size.width * 0.4, height: 5 ,alignment: .leading)
+                            Text("Rate:")
+                                .frame(width: geometry.size.width * 0.6, height: 5 ,alignment: .leading)
+                        }
                     }
                 }
-                .font(.custom("Georgia", size : 17))
+                .font(.custom("Georgia", size : 13))
+                .frame(maxHeight: .infinity)
             }
-            .frame(width: 200, height: 120)
-    
-            HStack{
-                VStack{
-                    
-                }
-            }
-        }.frame(width: 200, height: 120)
+            .frame(width: 350, height: 150)
+            .frame(maxWidth: .infinity)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.black, lineWidth: 2)
+            )
+            .padding()
+            
+            //Second Box
+        }
     }
 }
 

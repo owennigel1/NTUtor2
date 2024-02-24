@@ -59,8 +59,22 @@ struct SpeechBubble: Shape {
 
 struct ProfilePage: View {
     var body: some View {
+        
         VStack{
             ZStack{
+                //Background
+                Rectangle()
+                    .fill(
+                        AngularGradient(
+                            colors: [.white, Color("SecondaryColor")],
+                            center: .center,
+                            startAngle: .degrees(35),
+                            endAngle: .degrees(180))
+                    ).opacity(0.15)
+                    .frame(width: 1000, height: 2000)
+                    .offset(y:-240)
+                    .ignoresSafeArea()
+            
                 //Top half display of profile: pic,name,course,year
                 Circle().fill(
                     LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor")]), startPoint: .top, endPoint: .bottom)

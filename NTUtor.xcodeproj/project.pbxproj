@@ -18,6 +18,7 @@
 		305658082B89D03A00B0208A /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658072B89D03A00B0208A /* BottomBarView.swift */; };
 		3056580C2B89D75E00B0208A /* students.png in Resources */ = {isa = PBXBuildFile; fileRef = 3056580B2B89D75E00B0208A /* students.png */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
+		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		305658072B89D03A00B0208A /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		3056580B2B89D75E00B0208A /* students.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = students.png; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		C93A25572B89936F004FD102 /* SearchTutPage */ = {
 			isa = PBXGroup;
 			children = (
+				C93A25622B89A881004FD102 /* Confirmation.swift */,
 			);
 			path = SearchTutPage;
 			sourceTree = "<group>";
@@ -220,8 +223,12 @@
 			files = (
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
+<<<<<<< HEAD
+				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
+=======
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
 				305658082B89D03A00B0208A /* BottomBarView.swift in Sources */,
+>>>>>>> main
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,7 +63,7 @@ struct ProfilePage: View {
             ZStack{
                 //Top half display of profile: pic,name,course,year
                 Circle().fill(
-                    LinearGradient(gradient: Gradient(colors: [.white, Color("SecondaryColor").opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor")]), startPoint: .top, endPoint: .bottom)
                     )
                     .frame(width: 500, height:500)
                     .offset(y:-333)
@@ -75,25 +75,25 @@ struct ProfilePage: View {
                         .frame(width: 175, height:200)
                         .scaledToFit()
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color(red: 39 / 255, green: 113 / 255, blue: 233 / 255), lineWidth: 4))
+                        .overlay(Circle().stroke(Color("SecondaryColor"), lineWidth: 2))
                         .shadow(radius: 20)
                     VStack{
-                        Text("Sophia Lim")
+                        Text("Owen Nigel")
                             .font(.system(size: 35))
                             .bold()
                         HStack{
-                            Text("CS")
+                            Text("BCG")
                                 .italic()
                             Text("|")
                                 .foregroundColor(Color("AccentColor"))
-                            Text("Year 2")
+                            Text("Year 1")
                         }
                         .font(.system(size: 20))
                     }
                     
                 }.offset(y:-245)
                 
-                //Bottom half display of bio
+                //Bottom half display of bio, contact details + rates
                 VStack(spacing:-15){
                     Text("About Me")
                         .bold()
@@ -104,19 +104,36 @@ struct ProfilePage: View {
                     ZStack{
                         SpeechBubble()
                             .stroke(Color.gray, lineWidth: 3)
-                            .frame(width: 300, height:200)
+                            .frame(width: 340, height:200)
                         
                         Text("""
-                             Hello! I am Sophia, a Y2 Computer
-                             Science student. I provide tutoring
-                             for the following mods on Mon-Wed,
-                             1-3pm and 8-10pm.
+                             Hello! I am Owen, a Y1 Business &
+                             Computer Science student. I provide
+                             tutoring for the following mods on
+                             Mon-Wed, 1-3pm and 8-10pm.
                              
                              - SC1005 Digital Logic
                              - MH1812 Discrete Math
                              - SC1007 Data Structures and Algo
                              """)
                     }
+                    
+                    HStack{
+                        Text("Rates:")
+                            .foregroundColor(Color("AccentColor"))
+                        Text("$15/h")
+                            .italic()
+                    }.bold().font(.system(size:20)).offset(y:40)
+                    
+                    HStack{
+                        Text("Telegram:")
+                            .foregroundColor(Color("AccentColor"))
+                            .bold()
+                        Text("@OwenNigel")
+                            .foregroundColor(.gray)
+                            .italic()
+                    }.font(.system(size:20)).offset(y:60)
+            
                 }.offset(y:85)
             }
         }

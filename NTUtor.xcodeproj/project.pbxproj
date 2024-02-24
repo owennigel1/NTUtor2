@@ -22,6 +22,7 @@
 		305658182B89F58300B0208A /* TutorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658172B89F58300B0208A /* TutorPage.swift */; };
 		3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056581A2B89F76D00B0208A /* DropDownPickerGrade.swift */; };
 		3056581D2B89FDA200B0208A /* tutor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3056581C2B89FDA200B0208A /* tutor.png */; };
+		305658222B8A01DF00B0208A /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658212B8A01DF00B0208A /* DatePickerView.swift */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
 		C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */; };
@@ -44,6 +45,7 @@
 		305658172B89F58300B0208A /* TutorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorPage.swift; sourceTree = "<group>"; };
 		3056581A2B89F76D00B0208A /* DropDownPickerGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerGrade.swift; sourceTree = "<group>"; };
 		3056581C2B89FDA200B0208A /* tutor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutor.png; sourceTree = "<group>"; };
+		305658212B8A01DF00B0208A /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutors.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
+				305658202B8A01CD00B0208A /* DatePicker */,
 				305658162B89F56100B0208A /* TutorAvailPage */,
 				3056580F2B89E27000B0208A /* DropDownPicker */,
 				305658062B89D01D00B0208A /* BottomBar */,
@@ -138,6 +141,14 @@
 				305658172B89F58300B0208A /* TutorPage.swift */,
 			);
 			path = TutorAvailPage;
+			sourceTree = "<group>";
+		};
+		305658202B8A01CD00B0208A /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				305658212B8A01DF00B0208A /* DatePickerView.swift */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		C93A25572B89936F004FD102 /* SearchTutPage */ = {
@@ -254,6 +265,7 @@
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
 				3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
+				305658222B8A01DF00B0208A /* DatePickerView.swift in Sources */,
 				C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */,
 				305658082B89D03A00B0208A /* BottomBarView.swift in Sources */,
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,

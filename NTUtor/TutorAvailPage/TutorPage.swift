@@ -13,8 +13,8 @@ struct TutorPage: View {
             Image("tutor")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 300)
-                .padding(20)
+                .frame(width: 208)
+                .padding(.top,20)
             HStack{
                 Text("Be a Tutor")
                     .font(.system(size: 25, weight: .heavy, design: .default))
@@ -33,6 +33,7 @@ struct TutorPage: View {
                 Spacer()
             }
             .padding(.leading, 50)
+            DatePickerView()
             Spacer()
         }
     }

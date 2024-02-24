@@ -53,7 +53,10 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
-				C93A25572B89936F004FD102 /* New Group */,
+				C93A255C2B899FB1004FD102 /* TutorAvailPage */,
+				C93A255B2B899FA9004FD102 /* ProfilePage */,
+				C93A255A2B899F26004FD102 /* SchedulePage */,
+				C93A25572B89936F004FD102 /* SearchTutPage */,
 				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
 				305657E12B898AD000B0208A /* ContentView.swift */,
 				305657E32B898AD400B0208A /* Assets.xcassets */,
@@ -70,12 +73,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C93A25572B89936F004FD102 /* New Group */ = {
+		C93A25572B89936F004FD102 /* SearchTutPage */ = {
 			isa = PBXGroup;
 			children = (
 				C93A25582B89938E004FD102 /* SwiftUIView.swift */,
 			);
-			path = "New Group";
+			path = SearchTutPage;
+			sourceTree = "<group>";
+		};
+		C93A255A2B899F26004FD102 /* SchedulePage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SchedulePage;
+			sourceTree = "<group>";
+		};
+		C93A255B2B899FA9004FD102 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		C93A255C2B899FB1004FD102 /* TutorAvailPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TutorAvailPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

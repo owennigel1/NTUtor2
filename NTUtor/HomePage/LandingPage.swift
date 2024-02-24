@@ -14,7 +14,12 @@ struct LandingPage: View {
                 Image("banner")
                     .resizable()
                     .frame(width: 250, height: 60)
-                    .padding(.top, 150)
+                    .padding(.top, 80)
+                Image("students")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300)
+                    .padding(20)
                 Spacer()
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             }

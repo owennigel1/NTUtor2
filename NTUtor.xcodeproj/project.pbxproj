@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420E52B89B1C1001441F7 /* ProfilePage.swift */; };
 		305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305657DF2B898AD000B0208A /* NTUtorApp.swift */; };
 		305657E22B898AD000B0208A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305657E12B898AD000B0208A /* ContentView.swift */; };
 		305657E42B898AD400B0208A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305657E32B898AD400B0208A /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02B420E52B89B1C1001441F7 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		305657DC2B898AD000B0208A /* NTUtor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTUtor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305657DF2B898AD000B0208A /* NTUtorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTUtorApp.swift; sourceTree = "<group>"; };
 		305657E12B898AD000B0208A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		C93A255B2B899FA9004FD102 /* ProfilePage */ = {
 			isa = PBXGroup;
 			children = (
+				02B420E52B89B1C1001441F7 /* ProfilePage.swift */,
 			);
 			path = ProfilePage;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
+				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

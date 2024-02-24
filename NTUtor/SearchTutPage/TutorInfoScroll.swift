@@ -32,7 +32,7 @@ struct TutorInfoScroll: View {
 
     init() {
         var tempInfo = [person]()
-        for i in 1..<name.count {
+        for i in 0..<name.count {
             tempInfo.append(person(name: name[i],
                                     tele: tele[i],
                                     course: course[i],
@@ -57,22 +57,27 @@ struct TutorInfoScroll: View {
                     VStack {
                         NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
                             HStack{
-                                Image(systemName: "magnifyingglass")
-                                Text("Find a Tutor")
-                                    .font(.system(size: 25, weight: .heavy, design: .default))
+                                Image(systemName: "arrowshape.turn.up.left.fill")
+                                Text("Back")
+                                    .font(.system(size: 25, weight: .medium, design: .default))
+                                Spacer()
                             }
                             .padding()
                             .foregroundColor(.white)
                             .background(Color("AccentColor2"))
                             .cornerRadius(10)
                         }
+                        Spacer()
                         
-                        Text("SC1005 Digital Logic")
-                            .frame(width: .infinity, height: 50, alignment: .leading)
-                            .font(.custom("Arial", size : 30))
-                            .foregroundColor(.white)
-                            .shadow(radius: 20)
-                        .bold()
+                        HStack {
+                            Text("SC1005 Digital Logic")
+                                .frame(width: .infinity, height: 50, alignment: .leading)
+                                .font(.custom("Arial", size : 25))
+                                .foregroundColor(.white)
+                                .shadow(radius: 20)
+                            .bold()
+                            Spacer()
+                        }.padding(.leading)
                     }
                 }
 
@@ -81,15 +86,18 @@ struct TutorInfoScroll: View {
                     ScrollView (showsIndicators : false){
                         ForEach(tutorInfo) { info in
                             VStack(spacing: 20) {
-                                DisplayTutors(name: info.name,
-                                              tele: info.tele,
-                                              course: info.course,
-                                              year: info.year,
-                                              grade: info.grade,
-                                              rate: info.rate,
-                                              pic: info.pic)
+                                NavigationLink (destination: TutDescriptionPageView().navigationBarBackButtonHidden(true)) {
+                                    DisplayTutors(name: info.name,
+                                                  tele: info.tele,
+                                                  course: info.course,
+                                                  year: info.year,
+                                                  grade: info.grade,
+                                                  rate: info.rate,
+                                                  pic: info.pic)
+                                }
+                                .padding(.bottom, 8)
+                                .foregroundColor(.black)
                             }
-                            .padding(.bottom, 8)
                         }
                     }
                     .padding(20)

@@ -1,13 +1,13 @@
 //
-//  Confirmation.swift
+//  ConfirmationTutor.swift
 //  NTUtor
 //
-//  Created by Darrick Chew on 24/2/24.
+//  Created by Darrick Chew on 25/2/24.
 //
 
 import SwiftUI
 
-struct Confirmation: View {
+struct ConfirmationTutor: View {
     var body: some View {
         NavigationView {
             VStack{
@@ -17,7 +17,7 @@ struct Confirmation: View {
                     .foregroundColor(Color("AccentColor2"))
                     .padding()
                 
-                Text("Successfully Booked !")
+                Text("Successfully Uploaded!")
                     .font(.system(size: 25, weight: .regular, design: .default))
                     .bold()
                     .padding()
@@ -43,5 +43,5 @@ struct Confirmation: View {
 }
 
 #Preview {
-    Confirmation()
+    ConfirmationTutor()
 }

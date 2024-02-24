@@ -31,6 +31,7 @@
 		3056582F2B8A54A300B0208A /* DropDownPickerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056582E2B8A54A300B0208A /* DropDownPickerDate.swift */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
+		C9E9A1A32B8A679F00E76BE3 /* ConfirmationTutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A1A22B8A679F00E76BE3 /* ConfirmationTutor.swift */; };
 		C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */; };
 		C9FE336D2B8A359B00E42642 /* TutorInfoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE336C2B8A359B00E42642 /* TutorInfoScroll.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		3056582E2B8A54A300B0208A /* DropDownPickerDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerDate.swift; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
+		C9E9A1A22B8A679F00E76BE3 /* ConfirmationTutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationTutor.swift; sourceTree = "<group>"; };
 		C9FE336A2B89EBF300E42642 /* DisplayTutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutors.swift; sourceTree = "<group>"; };
 		C9FE336C2B8A359B00E42642 /* TutorInfoScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorInfoScroll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				305658172B89F58300B0208A /* TutorPage.swift */,
+				C9E9A1A22B8A679F00E76BE3 /* ConfirmationTutor.swift */,
 			);
 			path = TutorAvailPage;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				3056582F2B8A54A300B0208A /* DropDownPickerDate.swift in Sources */,
 				3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
+				C9E9A1A32B8A679F00E76BE3 /* ConfirmationTutor.swift in Sources */,
 				305658222B8A01DF00B0208A /* DatePickerView.swift in Sources */,
 				3056582A2B8A3F1200B0208A /* BioView.swift in Sources */,
 				C9FE336B2B89EBF300E42642 /* DisplayTutors.swift in Sources */,

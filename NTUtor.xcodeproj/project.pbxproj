@@ -15,6 +15,7 @@
 		305657FE2B89C71300B0208A /* name.png in Resources */ = {isa = PBXBuildFile; fileRef = 305657FB2B89C71300B0208A /* name.png */; };
 		305657FF2B89C71300B0208A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 305657FC2B89C71300B0208A /* logo.png */; };
 		305658002B89C71300B0208A /* Screenshot 2024-02-24 at 2.09.46 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 305657FD2B89C71300B0208A /* Screenshot 2024-02-24 at 2.09.46 PM.png */; };
+		305658082B89D03A00B0208A /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658072B89D03A00B0208A /* BottomBarView.swift */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		305657FB2B89C71300B0208A /* name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name.png; sourceTree = "<group>"; };
 		305657FC2B89C71300B0208A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		305657FD2B89C71300B0208A /* Screenshot 2024-02-24 at 2.09.46 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2024-02-24 at 2.09.46 PM.png"; sourceTree = "<group>"; };
+		305658072B89D03A00B0208A /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 		305657DE2B898AD000B0208A /* NTUtor */ = {
 			isa = PBXGroup;
 			children = (
+				305658062B89D01D00B0208A /* BottomBar */,
 				305657DF2B898AD000B0208A /* NTUtorApp.swift */,
 				C93A255D2B89A3E9004FD102 /* HomePage */,
 				C93A255C2B899FB1004FD102 /* TutorAvailPage */,
@@ -91,6 +94,14 @@
 				305657FD2B89C71300B0208A /* Screenshot 2024-02-24 at 2.09.46 PM.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		305658062B89D01D00B0208A /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				305658072B89D03A00B0208A /* BottomBarView.swift */,
+			);
+			path = BottomBar;
 			sourceTree = "<group>";
 		};
 		C93A25572B89936F004FD102 /* SearchTutPage */ = {
@@ -206,6 +217,7 @@
 				305657E22B898AD000B0208A /* ContentView.swift in Sources */,
 				305657E02B898AD000B0208A /* NTUtorApp.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
+				305658082B89D03A00B0208A /* BottomBarView.swift in Sources */,
 				C93A25612B89A445004FD102 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

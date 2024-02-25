@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025389192B8AC065004AF8DB /* TuteeScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025389182B8AC065004AF8DB /* TuteeScheduleView.swift */; };
 		02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420E52B89B1C1001441F7 /* ProfilePage.swift */; };
 		02B420F12B89F3E3001441F7 /* SchedulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F02B89F3E3001441F7 /* SchedulePage.swift */; };
 		02B420F42B8A2684001441F7 /* TutorScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F32B8A2684001441F7 /* TutorScheduleView.swift */; };
@@ -31,6 +32,7 @@
 		3056582F2B8A54A300B0208A /* DropDownPickerDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056582E2B8A54A300B0208A /* DropDownPickerDate.swift */; };
 		305658322B8AB57100B0208A /* TutorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658312B8AB57100B0208A /* TutorData.swift */; };
 		305658342B8AB95100B0208A /* PersonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305658332B8AB95100B0208A /* PersonStruct.swift */; };
+		305658372B8AC12300B0208A /* photo_6255619918619851050_x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 305658362B8AC12300B0208A /* photo_6255619918619851050_x.jpg */; };
 		C93A25612B89A445004FD102 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25602B89A445004FD102 /* LandingPage.swift */; };
 		C93A25632B89A881004FD102 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A25622B89A881004FD102 /* Confirmation.swift */; };
 		C9E9A1A32B8A679F00E76BE3 /* ConfirmationTutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A1A22B8A679F00E76BE3 /* ConfirmationTutor.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025389182B8AC065004AF8DB /* TuteeScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuteeScheduleView.swift; sourceTree = "<group>"; };
 		02B420E52B89B1C1001441F7 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		02B420F02B89F3E3001441F7 /* SchedulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePage.swift; sourceTree = "<group>"; };
 		02B420F32B8A2684001441F7 /* TutorScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorScheduleView.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		3056582E2B8A54A300B0208A /* DropDownPickerDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerDate.swift; sourceTree = "<group>"; };
 		305658312B8AB57100B0208A /* TutorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorData.swift; sourceTree = "<group>"; };
 		305658332B8AB95100B0208A /* PersonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStruct.swift; sourceTree = "<group>"; };
+		305658362B8AC12300B0208A /* photo_6255619918619851050_x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo_6255619918619851050_x.jpg; sourceTree = "<group>"; };
 		C93A25602B89A445004FD102 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		C93A25622B89A881004FD102 /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
 		C9E9A1A22B8A679F00E76BE3 /* ConfirmationTutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationTutor.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				02B420F32B8A2684001441F7 /* TutorScheduleView.swift */,
+				025389182B8AC065004AF8DB /* TuteeScheduleView.swift */,
 			);
 			path = SchedulePages;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		305657FA2B89C6FD00B0208A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				305658362B8AC12300B0208A /* photo_6255619918619851050_x.jpg */,
 				305658232B8A06AB00B0208A /* 36368-removebg-preview.png */,
 				3056581C2B89FDA200B0208A /* tutor.png */,
 				3056580B2B89D75E00B0208A /* students.png */,
@@ -316,6 +322,7 @@
 				305657FF2B89C71300B0208A /* logo.png in Resources */,
 				305658242B8A06AB00B0208A /* 36368-removebg-preview.png in Resources */,
 				305657E72B898AD400B0208A /* Preview Assets.xcassets in Resources */,
+				305658372B8AC12300B0208A /* photo_6255619918619851050_x.jpg in Resources */,
 				305657E42B898AD400B0208A /* Assets.xcassets in Resources */,
 				3056580C2B89D75E00B0208A /* students.png in Resources */,
 				305658002B89C71300B0208A /* Screenshot 2024-02-24 at 2.09.46 PM.png in Resources */,
@@ -339,6 +346,7 @@
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
 				3056582F2B8A54A300B0208A /* DropDownPickerDate.swift in Sources */,
 				3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */,
+				025389192B8AC065004AF8DB /* TuteeScheduleView.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
 				305658322B8AB57100B0208A /* TutorData.swift in Sources */,
 				C9E9A1A32B8A679F00E76BE3 /* ConfirmationTutor.swift in Sources */,

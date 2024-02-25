@@ -16,4 +16,6 @@ struct person: Identifiable {
     var grade: String
     var rate: String
     var pic: String
+    var bio: String
+    var date_available : [String]
 }

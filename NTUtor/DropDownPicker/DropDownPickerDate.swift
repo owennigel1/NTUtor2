@@ -10,16 +10,12 @@ import SwiftUI
 struct DropDownPickerDate: View {
     
     @State var selection1: String? = nil
+    var date_available: [String]
     
     var body: some View {
             DropDownPicker3(
                 selection: $selection1,
-                options: [
-                    "15 Jan 2024 | 16:00",
-                    "17 Jan 2024 | 13:00",
-                    "19 Jan 2024 | 09:00",
-                    "20 Jan 2024 | 14:00",
-                ]
+                options: date_available
             )
     }
 }
@@ -123,7 +119,7 @@ struct DropDownPicker3: View {
     }
 }
 
-#Preview {
-    DropDownPickerDate()
-}
+//#Preview {
+//    DropDownPickerDate()
+//}
 

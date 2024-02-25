@@ -15,14 +15,11 @@ struct DropDownPickerView: View {
     var body: some View {
             DropDownPicker(
                 selection: $selection1,
-                options: [
-                    "SC1005 Digital Logic",
+                options: ["SC1005 Digital Logic",
                     "SC1007 Data Structures & Algorithm",
                     "MH1812 Discrete Mathematics",
                     "AB1202 Statistics & Analysis",
-                    "MH1810 Mathematics I"
-                ]
-            )
+                    "MH1810 Mathematics I"])
     }
 }
 

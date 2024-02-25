@@ -52,10 +52,14 @@ struct ProfilePage: View {
                 }.offset(y:-225)
                 
                 //Edit Profile
-                Image(systemName: "highlighter")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .offset(x:165,y:-360)
+                Button {
+                    print("edit profile")
+                } label: {
+                    Image(systemName: "highlighter")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                        .offset(x:165,y:-360)
+                }
                 
                 //Bottom half display of bio, contact details + rates
                 VStack(spacing:-15){

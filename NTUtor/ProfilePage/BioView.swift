@@ -22,7 +22,7 @@ struct BioView: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color("AccentColor2"), lineWidth: 3)
+                .stroke(Color("AccentColor2"), lineWidth: 2)
                 .frame(width: 340, height:200)
             
             Text("\(Bio)")

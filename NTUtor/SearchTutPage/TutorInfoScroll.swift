@@ -26,7 +26,7 @@ struct TutorInfoScroll: View {
                             Image(systemName: "chevron.left")
                                 .foregroundColor(.white)
                                 .bold()
-                            Text("SC1005 Digital Logic")
+                            Text("Tutors")
                                 .frame(width: UIScreen.main.bounds.width, height: 50, alignment: .leading)
                                 .font(.custom("Arial", size : 25))
                                 .foregroundColor(.white)

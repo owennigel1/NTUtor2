@@ -48,7 +48,7 @@ struct BottomBarView: View {
                 .padding(.bottom, getSafeArea().bottom == 0 ? 5 : (getSafeArea().bottom - 15))
                 .foregroundColor(Color.black)
                 .background(Color.white
-                    .shadow(color: Color.black, radius:4, x:0, y:0)
+                    .shadow(color: Color.black, radius:1, x:0, y:0)
                     .mask(Rectangle().padding(.top,-20)))
             }
             ,

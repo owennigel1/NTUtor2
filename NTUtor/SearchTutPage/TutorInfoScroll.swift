@@ -25,14 +25,17 @@ struct TutorInfoScroll: View {
                         HStack {
                             Image(systemName: "chevron.left")
                                 .foregroundColor(.white)
+                                .bold()
                             Text("SC1005 Digital Logic")
                                 .frame(width: UIScreen.main.bounds.width, height: 50, alignment: .leading)
                                 .font(.custom("Arial", size : 25))
                                 .foregroundColor(.white)
                                 .shadow(radius: 20)
                                 .bold()
-                        }.padding(.leading, 35)
+                        }
+                        .padding(.leading, 35)
                     }
+                    .offset(y:-5)
                 }
 
                 ZStack{

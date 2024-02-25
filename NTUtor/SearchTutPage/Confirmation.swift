@@ -21,7 +21,6 @@ struct Confirmation: View {
                     .font(.system(size: 25, weight: .regular, design: .default))
                     .bold()
                     .padding()
-    //            Text("A Confirmation Email Has Been Sent to \(tutorEmail)")
                 
                 NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
                     HStack{

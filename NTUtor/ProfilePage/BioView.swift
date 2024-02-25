@@ -21,8 +21,8 @@ struct BioView: View {
     
     var body: some View {
         ZStack{
-            SpeechBubble()
-                .stroke(Color.gray, lineWidth: 3)
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color("AccentColor2"), lineWidth: 3)
                 .frame(width: 340, height:200)
             
             Text("\(Bio)")

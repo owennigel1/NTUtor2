@@ -16,7 +16,7 @@ struct ProfilePage: View {
                 Rectangle()
                     .fill(
                         AngularGradient(
-                            colors: [.white, Color("SecondaryColor")],
+                            colors: [.white, Color("AccentColor2")],
                             center: .center,
                             startAngle: .degrees(35),
                             endAngle: .degrees(180))
@@ -26,12 +26,6 @@ struct ProfilePage: View {
                     .ignoresSafeArea()
             
                 //Top half display of profile: pic,name,course,year
-                Circle().fill(
-                    LinearGradient(gradient: Gradient(colors: [.white, Color("AccentColor2")]), startPoint: .top, endPoint: .bottom)
-                    )
-                    .frame(width: 500, height:500)
-                    .offset(y:-350)
-                    .shadow(radius: 0)
                 VStack(spacing:-5){
                     Image("ProfilePic")
                         .resizable()
@@ -39,7 +33,7 @@ struct ProfilePage: View {
                         .frame(width: 175, height:200)
                         .scaledToFit()
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color("SecondaryColor"), lineWidth: 2))
+                        .overlay(Circle().stroke(Color("AccentColor2"), lineWidth: 2))
                         .shadow(radius: 20)
                     VStack{
                         Text("Owen Nigel")
@@ -49,13 +43,13 @@ struct ProfilePage: View {
                             Text("BCG")
                                 .italic()
                             Text("|")
-                                .foregroundColor(Color("SecondaryColor"))
+                                .foregroundColor(Color("AccentColor2"))
                             Text("Year 1")
                         }
                         .font(.system(size: 20))
                     }
                     
-                }.offset(y:-255)
+                }.offset(y:-225)
                 
                 //Edit Profile
                 Image(systemName: "highlighter")

@@ -11,13 +11,17 @@ struct TutDescriptionPageView: View {
     var body: some View {
         NavigationView {
             VStack{
-                HStack{
-                    Text("Tutor's Information")
-                        .font(.system(size: 25, weight: .heavy, design: .default))
-                        .padding(.leading, 30)
-                    Spacer()
+                NavigationLink (destination: TutorInfoScroll().navigationBarBackButtonHidden(true)) {
+                    HStack{
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
+                            .bold()
+                        Text("Tutor's Information")
+                            .font(.system(size: 25, weight: .heavy, design: .default))
+                            .foregroundColor(.black)
+                    }
                 }
-                .padding(.top, 20)
+                .offset(x: -50)
                 
                 DisplayTutors(name: "Owen",
                               tele: "owennigel",

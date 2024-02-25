@@ -23,7 +23,7 @@ struct ConfirmationTutor: View {
                     .padding()
     //            Text("A Confirmation Email Has Been Sent to \(tutorEmail)")
                 
-                NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
+                NavigationLink (destination: TutorPage().navigationBarBackButtonHidden(true)) {
                     HStack{
                         Image(systemName: "arrow.left.circle.fill")
 

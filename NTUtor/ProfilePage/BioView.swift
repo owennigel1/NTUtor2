@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BioView: View {
+<<<<<<< HEAD
     var Bio: String = """
     Hello! I am Owen, a Y1 Business &
     Computer Science student. I provide
@@ -18,18 +19,22 @@ struct BioView: View {
     - MH1812 Discrete Math
     - AB1202 Statistics and Analysis
     """
+=======
+    var bio: String
+>>>>>>> main
     
     var body: some View {
         ZStack{
-            SpeechBubble()
-                .stroke(Color.gray, lineWidth: 3)
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color("AccentColor2"), lineWidth: 3)
                 .frame(width: 340, height:200)
             
-            Text("\(Bio)")
+            Text("\(bio)")
+                .frame(width: 310)
         }
     }
 }
 
-#Preview {
-    BioView()
-}
+//#Preview {
+//    BioView()
+//}

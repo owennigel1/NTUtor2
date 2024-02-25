@@ -8,27 +8,42 @@
 import SwiftUI
 
 struct TutDescriptionPageView: View {
+    
+    var name: String?
+    var tele: String?
+    var course: String?
+    var year: Int?
+    var grade: String?
+    var rate: String?
+    var pic: String?
+    var bio: String?
+    var date_available: [String]?
+    
     var body: some View {
         NavigationView {
             VStack{
-                HStack{
-                    Text("Tutor's Information")
-                        .font(.system(size: 25, weight: .heavy, design: .default))
-                        .padding(.leading, 30)
-                    Spacer()
+                NavigationLink (destination: TutorInfoScroll().navigationBarBackButtonHidden(true)) {
+                    HStack{
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
+                            .bold()
+                        Text("Tutor's Information")
+                            .font(.system(size: 25, weight: .heavy, design: .default))
+                            .foregroundColor(.black)
+                    }
                 }
-                .padding(.top, 20)
+                .offset(x: -50)
                 
-                DisplayTutors(name: "Owen",
-                              tele: "owennigel",
-                              course: "BCG",
-                              year : 1,
-                              grade: "A+",
-                              rate: "$10/HR",
-                              pic: "ProfilePic")
+                DisplayTutors(name: name!,
+                              tele: tele!,
+                              course: course!,
+                              year : year!,
+                              grade: grade!,
+                              rate: rate!,
+                              pic: pic!)
                 .padding(.bottom, 20)
                 
-                BioView()
+                BioView(bio: bio!)
                     .padding(.bottom, 10)
                 HStack{
                     Text("I am available on : ")
@@ -37,7 +52,7 @@ struct TutDescriptionPageView: View {
                 }
                 .padding(.leading, 30)
                 
-                DropDownPickerDate()
+                DropDownPickerDate(date_available: date_available!)
                     .offset(x:-81)
                     .padding(5)
                 HStack{
@@ -64,6 +79,6 @@ struct TutDescriptionPageView: View {
     }
 }
 
-#Preview {
-    TutDescriptionPageView()
-}
+//#Preview {
+//    TutDescriptionPageView()
+//}

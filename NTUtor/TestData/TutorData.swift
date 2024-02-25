@@ -17,19 +17,19 @@ struct TutorData {
     let rate = ["$35/HR", "$5/HR", "$30/HR", "$20/HR", "$30/HR", "$40/HR"]
     let pic = ["MurtazaPic", "ProfilePic2", "ProfilePic3", "ProfilePic4", "ProfilePic5", "ProfilePic6"]
     let bio = ["""
-               Murtaza, a diligent and driven university student, brings a blend of intellectual curiosity and cultural richness to campus life. Hailing from a vibrant background, his experiences have imbued him with a profound appreciation for diversity and a keen understanding of global perspectives.
+               Murtaza, a diligent and driven university student, brings a blend of intellectual curiosity and cultural richness to campus life.
                """,
     """
-John, a dynamic presence on campus, exudes an aura of infectious enthusiasm and unwavering curiosity. With a perpetual twinkle in his eye, he approaches every academic challenge with a blend of determination and joy, inspiring his peers to embrace learning with newfound fervor.
+John, a dynamic presence on campus, exudes an aura of infectious enthusiasm and unwavering curiosity.
 """,
     """
-Michael, the quintessential university student, possesses an understated charm and quiet intelligence that belies his unassuming demeanor. Often found lost in thought amidst the hustle and bustle of campus life, he approaches his studies with a meticulous attention to detail and a dedication to excellence.
+Michael, the quintessential university student, possesses an understated charm and quiet intelligence that belies his unassuming demeanor.
 """, """
-Darrick, a charismatic presence on campus, combines effortless charm with a sharp intellect. With a magnetic personality that draws others in, he navigates university life with confidence and ease. Whether dazzling in debates or leading student organizations, Darrick's natural leadership and quick wit make him a standout figure in the university community.
+Darrick, a charismatic presence on campus, combines effortless charm with a sharp intellect. With a magnetic personality that draws others in, he navigates university life with confidence and ease.
 """, """
-Rachel, a beacon of intellect and grace, captivates those around her with her quiet confidence and unwavering determination. With a keen eye for detail and a passion for academia, she navigates the university landscape with poise and purpose.
+Rachel, a beacon of intellect and grace, captivates those around her with her quiet confidence and unwavering determination.
 """, """
-Bob, a laid-back and affable presence on campus, navigates university life with an easygoing charm. With a knack for making friends wherever he goes, he brings a sense of warmth and camaraderie to every interaction.
+Bob, a laid-back and affable presence on campus, navigates university life with an easygoing charm. 
 """]
     let date_available = [
         [

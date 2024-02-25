@@ -49,7 +49,9 @@ struct TutorInfoScroll: View {
                                                                                     year: info.year,
                                                                                     grade: info.grade,
                                                                                     rate: info.rate,
-                                                                                    pic: info.pic).navigationBarBackButtonHidden(true)) {
+                                                                                    pic: info.pic,
+                                                                                    bio:info.bio,
+                                                                                    date_available: info.date_available).navigationBarBackButtonHidden(true)) {
                                     DisplayTutors(name: info.name,
                                                   tele: info.tele,
                                                   course: info.course,

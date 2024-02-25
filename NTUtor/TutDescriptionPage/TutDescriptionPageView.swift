@@ -43,7 +43,7 @@ struct TutDescriptionPageView: View {
                               pic: pic!)
                 .padding(.bottom, 20)
                 
-                BioView()
+                BioView(bio: bio!)
                     .padding(.bottom, 10)
                 HStack{
                     Text("I am available on : ")
@@ -52,7 +52,7 @@ struct TutDescriptionPageView: View {
                 }
                 .padding(.leading, 30)
                 
-                DropDownPickerDate()
+                DropDownPickerDate(date_available: date_available!)
                     .offset(x:-81)
                     .padding(5)
                 HStack{

@@ -65,7 +65,9 @@ struct ProfilePage: View {
                         .font(.system(size:25))
                         .offset(x:-110, y:-35)
                     
-                    BioView()
+                    BioView(bio: """
+    Owen, a studious and introspective university student, approaches academia with a quiet determination and a thirst for knowledge. 
+    """)
                     
                     HStack{
                         Text("Rates:")

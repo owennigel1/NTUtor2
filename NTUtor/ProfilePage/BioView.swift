@@ -16,7 +16,7 @@ struct BioView: View {
     
     - SC1005 Digital Logic
     - MH1812 Discrete Math
-    - SC1007 Data Structures and Algo
+    - AB1202 Statistics and Analysis
     """
     
     var body: some View {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025389192B8AC065004AF8DB /* TuteeScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025389182B8AC065004AF8DB /* TuteeScheduleView.swift */; };
 		02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420E52B89B1C1001441F7 /* ProfilePage.swift */; };
 		02B420F12B89F3E3001441F7 /* SchedulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F02B89F3E3001441F7 /* SchedulePage.swift */; };
 		02B420F42B8A2684001441F7 /* TutorScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B420F32B8A2684001441F7 /* TutorScheduleView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025389182B8AC065004AF8DB /* TuteeScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuteeScheduleView.swift; sourceTree = "<group>"; };
 		02B420E52B89B1C1001441F7 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		02B420F02B89F3E3001441F7 /* SchedulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePage.swift; sourceTree = "<group>"; };
 		02B420F32B8A2684001441F7 /* TutorScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorScheduleView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				02B420F32B8A2684001441F7 /* TutorScheduleView.swift */,
+				025389182B8AC065004AF8DB /* TuteeScheduleView.swift */,
 			);
 			path = SchedulePages;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				C93A25632B89A881004FD102 /* Confirmation.swift in Sources */,
 				3056582F2B8A54A300B0208A /* DropDownPickerDate.swift in Sources */,
 				3056581B2B89F76D00B0208A /* DropDownPickerGrade.swift in Sources */,
+				025389192B8AC065004AF8DB /* TuteeScheduleView.swift in Sources */,
 				02B420E62B89B1C1001441F7 /* ProfilePage.swift in Sources */,
 				C9E9A1A32B8A679F00E76BE3 /* ConfirmationTutor.swift in Sources */,
 				305658222B8A01DF00B0208A /* DatePickerView.swift in Sources */,

@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct TutDescriptionPageView: View {
+    
+    var name: String?
+    var tele: String?
+    var course: String?
+    var year: Int?
+    var grade: String?
+    var rate: String?
+    var pic: String?
+    var bio: String?
+    var date_available: [String]?
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -19,13 +30,13 @@ struct TutDescriptionPageView: View {
                 }
                 .padding(.top, 20)
                 
-                DisplayTutors(name: "Owen",
-                              tele: "owennigel",
-                              course: "BCG",
-                              year : 1,
-                              grade: "A+",
-                              rate: "$10/HR",
-                              pic: "ProfilePic")
+                DisplayTutors(name: name!,
+                              tele: tele!,
+                              course: course!,
+                              year : year!,
+                              grade: grade!,
+                              rate: rate!,
+                              pic: pic!)
                 .padding(.bottom, 20)
                 
                 BioView()
@@ -64,6 +75,6 @@ struct TutDescriptionPageView: View {
     }
 }
 
-#Preview {
-    TutDescriptionPageView()
-}
+//#Preview {
+//    TutDescriptionPageView()
+//}

@@ -40,7 +40,13 @@ struct TutorInfoScroll: View {
                     ScrollView (showsIndicators : false){
                         ForEach(TutorData().tutorInfo) { info in
                             VStack(spacing: 20) {
-                                NavigationLink (destination: TutDescriptionPageView().navigationBarBackButtonHidden(true)) {
+                                NavigationLink (destination: TutDescriptionPageView(name: info.name,
+                                                                                    tele: info.tele,
+                                                                                    course: info.course,
+                                                                                    year: info.year,
+                                                                                    grade: info.grade,
+                                                                                    rate: info.rate,
+                                                                                    pic: info.pic).navigationBarBackButtonHidden(true)) {
                                     DisplayTutors(name: info.name,
                                                   tele: info.tele,
                                                   course: info.course,

@@ -54,30 +54,18 @@ struct TutorInfoScroll: View {
                         .ignoresSafeArea()
                         .padding(-30)
                     
-                    VStack {
-                        NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
-                            HStack{
-                                Image(systemName: "arrowshape.turn.up.left.fill")
-                                Text("Back")
-                                    .font(.system(size: 25, weight: .medium, design: .default))
-                                Spacer()
-                            }
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(Color("AccentColor2"))
-                            .cornerRadius(10)
-                        }
-                        Spacer()
-                        
+                    
+                    NavigationLink (destination: LandingPage().navigationBarBackButtonHidden(true)) {
                         HStack {
+                            Image(systemName: "chevron.left")
+                                .foregroundColor(.white)
                             Text("SC1005 Digital Logic")
-                                .frame(width: .infinity, height: 50, alignment: .leading)
+                                .frame(width: UIScreen.main.bounds.width, height: 50, alignment: .leading)
                                 .font(.custom("Arial", size : 25))
                                 .foregroundColor(.white)
                                 .shadow(radius: 20)
-                            .bold()
-                            Spacer()
-                        }.padding(.leading)
+                                .bold()
+                        }.padding(.leading, 35)
                     }
                 }
 
@@ -97,12 +85,14 @@ struct TutorInfoScroll: View {
                                 }
                                 .padding(.bottom, 8)
                                 .foregroundColor(.black)
+                                
                             }
                         }
                     }
-                    .padding(20)
+                    .padding(15)
+                    .padding(.bottom, 35)
                 }
-                .frame(width:.infinity, height: 630)
+                .frame(width: UIScreen.main.bounds.width, height: 710)
                 .cornerRadius(20)
             }
         }

@@ -53,6 +53,7 @@ struct TuteeSchedRowView: View{
             Text(tuteeRow.tutorName)
                 .foregroundColor(.black)
                 .offset(x:-10, y:15)
+                .italic()
         }
     }
 }
@@ -71,7 +72,7 @@ struct TuteeScheduleView: View {
             }
             .padding()
         }
-        .background(LinearGradient(gradient: Gradient(colors: [Color("SecondaryColor").opacity(0.3), Color("SecondaryColor")]), startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: Gradient(colors: [Color("SecondaryColor2").opacity(0.3), Color("SecondaryColor2")]), startPoint: .top, endPoint: .bottom))
         .border(Color("SecondaryColor"),width:1)
         .frame(width: 352, height:210)
         .cornerRadius(20)
